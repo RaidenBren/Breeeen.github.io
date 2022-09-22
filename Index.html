@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="home_content">
+            <div class="text">Welcome</div>
+        </div>
+        <div class="sound">
+            <audio autoplay loop controls>
+                <source src="Raiden.mp3" type="audio/mpeg">
+                </a>
+            </audio>
+        </div>
+        <div class="section">
+            
+            <video autoplay loop muted poster="http">
+                <source src="Raiden Shogun.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-copyright'></i>
+                    <div class="logo_name">Canton</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li> 
+                        <i class='bx bx-search-alt'></i>
+                        <input type="text" placeholder="Search...">
+                    <span class="links_name">Search</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle'></i>
+                        <span class="links_name">Resume</span>
+                    </a>
+                    <span class="tooltip"><img src="kazuha.gif"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-comment-add'></i>
+                        <span class="links_name">Feedback</span>
+                    </a>
+                    <span class="tooltip"><img src="hutao.gif"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-network-chart'></i>
+                        <span class="links_name">Projects</span>
+                    </a>
+                    <span class="tooltip"><img src="Eula.gif"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-dribbble'></i>
+                        <span class="links_name">Hobbies</span>
+                    </a>
+                    <span class="tooltip"><img src="fight.gif"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Nothing</span>
+                    </a>
+                    <span class="tooltip"><img src="Yae.gif"></span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="profile.gif">
+                        <div class="name_job">
+                            <div class="name">Brendan Palma</div>
+                            <div class="job">Web Designer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+        
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search-alt");
+
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+            searchBtn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+        </script>
+    </body>
+    
+</html>
